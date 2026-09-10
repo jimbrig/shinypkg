@@ -1,11 +1,24 @@
 Package: shinypkg
-Title: What the Package Does (One Line, Title Case)
+Title: Shiny App as R Package
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Streamlines the process of creating a Shiny app as an R
+    package.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
+Depends: 
+    R (>= 4.2.0)
+Imports: 
+    bslib (>= 0.12.0),
+    rlang (>= 1.1.0),
+    shiny (>= 1.14.0)
+Config/rcmdcheck/ignore-inconsequential-notes: true
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.1.0
+URL: https://github.com/jimbrig/shinypkg
+BugReports: https://github.com/jimbrig/shinypkg/issues
