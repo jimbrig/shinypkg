@@ -5,8 +5,7 @@ Authors@R:
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
 Description: Streamlines the process of creating a Shiny app as an R
     package.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Depends: 
     R (>= 4.2.0)
 Imports: 
