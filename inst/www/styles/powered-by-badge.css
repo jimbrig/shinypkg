@@ -1,0 +1,149 @@
+/* Base container styles */
+.pb-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.pb-text {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.pb-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Modern style */
+.pb-container.modern {
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.pb-container.modern .pb-text {
+  color: #495057;
+}
+
+.pb-container.modern .pb-badge {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pb-container.modern .pb-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Gradient style */
+.pb-container.gradient {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+}
+
+.pb-container.gradient .pb-text {
+  background: linear-gradient(135deg, #495057 0%, #343a40 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pb-container.gradient .pb-badge {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-size: 200% auto;
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.pb-container.gradient .pb-badge:hover {
+  background-position: right center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Minimal style */
+.pb-container.minimal {
+  padding: 10px 0;
+}
+
+.pb-container.minimal .pb-text {
+  font-weight: 400;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.pb-container.minimal .pb-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: opacity 0.2s;
+}
+
+.pb-container.minimal .pb-badge:hover {
+  opacity: 0.9;
+}
+
+/* Pill style */
+.pb-container.pill {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 30px;
+}
+
+.pb-container.pill .pb-text {
+  font-weight: 500;
+  color: #495057;
+  margin: 0 5px;
+}
+
+.pb-container.pill .pb-badge {
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.pb-container.pill .pb-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 7px rgba(0,0,0,0.15);
+}
+
+/* Technology-specific colors */
+.pb-r { background-color: #2266BB; }
+.pb-shiny { background-color: #71B5FF; }
+.pb-bslib { background-color: #563D7C; }
+.pb-tidyverse { background-color: #EE6331; }
+.pb-plotly { background-color: #3F4F75; }
+.pb-leaflet { background-color: #8CB93E; }
+.pb-dt { background-color: #0099CC; }
+.pb-ggplot2 { background-color: #FC8D62; }
+.pb-python { background-color: #FFD43B; color: #3776AB !important; }
+.pb-sql { background-color: #F29111; }
+.pb-aws { background-color: #FF9900; }
+.pb-docker { background-color: #0DB7ED; }
+
+/* Gradient variants */
+.pb-container.gradient .pb-r {
+  background-image: linear-gradient(to right, #2266BB 0%, #2266BB99 50%, #2266BB 100%);
+}
+.pb-container.gradient .pb-shiny {
+  background-image: linear-gradient(to right, #71B5FF 0%, #71B5FF99 50%, #71B5FF 100%);
+}
+.pb-container.gradient .pb-bslib {
+  background-image: linear-gradient(to right, #563D7C 0%, #563D7C99 50%, #563D7C 100%);
+}
+.pb-container.gradient .pb-tidyverse {
+  background-image: linear-gradient(to right, #EE6331 0%, #EE633199 50%, #EE6331 100%);
+}
+/* Add other gradient definitions as needed */

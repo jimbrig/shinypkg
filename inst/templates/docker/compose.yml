@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      secrets:
+        - github_pat
+    env_file:
+      - .Renviron
+    ports:
+      - {{port}}:{{port}}
+    environment:
+      - R_CONFIG_ACTIVE=default
+      - R_CONFIG_FILE=/usr/local/lib/R/site-library/{{pkgname}}/config/config.yml
+      - SHINY_PORT={{port}}
+      - SHINY_HOST=0.0.0.0
+
+secrets:
+  github_pat:
+    environment: GITHUB_PAT

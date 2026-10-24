@@ -1,0 +1,8 @@
+{
+    "[r]": {
+        "editor.defaultFormatter": "Posit.air-vscode"
+    },
+    "[quarto]": {
+        "editor.defaultFormatter": "quarto.quarto"
+    }
+}

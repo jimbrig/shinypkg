@@ -115,3 +115,12 @@ hexSticker::sticker(
 
 usethis::use_logo("man/figures/hex.logo.png")
 
+# inst/www ----------------------------------------------------------------
+
+fs::dir_create("inst/www/images")
+file.copy("man/figures/logo.png", "inst/www/images/logo.png")
+
+# create the default application logo (150x150 pixels)
+png::writePNG()
+
+

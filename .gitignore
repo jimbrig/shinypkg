@@ -1,6 +1,17 @@
+.Renviron
+.env
+/config.yml
+
 .Rproj.user
 .Rhistory
 .RData
 .httr-oauth
 .DS_Store
 .quarto
+inst/doc
+/docs
+
+.posit/assistant
+# {shinytest2}: Ignore new debug snapshots for `$expect_values()`
+*_.new.png
+**/.quarto/

@@ -2,22 +2,53 @@ Package: shinypkg
 Title: Shiny App as R Package
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+    person("Jimmy", "Briggs", , "jimmy.briggs@jimbrig.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7489-8787"))
 Description: Streamlines the process of creating a Shiny app as an R
     package.
 License: MIT + file LICENSE
+URL: https://github.com/jimbrig/shinypkg,
+    http://docs.jimbrig.com/shinypkg/
+BugReports: https://github.com/jimbrig/shinypkg/issues
 Depends: 
     R (>= 4.2.0)
 Imports: 
-    bslib (>= 0.12.0),
-    rlang (>= 1.1.0),
-    shiny (>= 1.14.0)
+    bsicons,
+    bslib,
+    cachem,
+    cli,
+    crayon,
+    fs,
+    htmltools,
+    mime,
+    rlang,
+    shiny,
+    shinybusy,
+    snakecase,
+    utils
+Suggests: 
+    knitr,
+    pw (>= 0.0.0.9019),
+    quarto,
+    rmarkdown,
+    shinydocker (>= 0.1.0),
+    shinyhealth (>= 0.0.0.9000),
+    shinyloadtest,
+    shinytest2,
+    spelling,
+    testthat (>= 3.0.0),
+    tibble,
+    withr
+VignetteBuilder: 
+    knitr,
+    quarto
+Remotes: 
+    github::coatless-rpkg/shinydocker,
+    ThinkR-open/pw
 Config/rcmdcheck/ignore-inconsequential-notes: true
 Config/roxygen2/markdown: TRUE
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1
 Config/testthat/edition: 3
 Encoding: UTF-8
+Language: en-US
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.1.0
-URL: https://github.com/jimbrig/shinypkg
-BugReports: https://github.com/jimbrig/shinypkg/issues

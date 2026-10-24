@@ -1,0 +1,109 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Load R Package",
+      "type": "shell",
+      "command": "Rscript -e 'pkgload::load_all()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Check R Package",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::check()'",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Test R Package",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::test()'",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install R Package",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::install()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Document R Package",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::document()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Build R Package",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::build()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "Rscript -e 'devtools::install_deps()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "R CMD Check",
+      "type": "shell",
+      "command": "R CMD check .",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint R Code",
+      "type": "shell",
+      "command": "Rscript -e 'lintr::lint_package()'",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Update NAMESPACE and DESCRIPTION",
+      "type": "shell",
+      "command": "Rscript -e 'attachment::att_amend_desc()'",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "Rscript -e \"devtools::install_deps(dependencies = TRUE)\"",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "R CMD Check",
+      "type": "shell",
+      "command": "R CMD check .",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "workspaceFolderBasename",
+      "type": "command",
+      "command": "vscode.getWorkspaceFolderBasename",
+      "args": []
+    }
+  ]
+}

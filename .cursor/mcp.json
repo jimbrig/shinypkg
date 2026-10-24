@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["--bun", "-y", "playwright-mcp@latest"]
+    },
+    "auth0": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["-y", "@auth0/auth0-mcp-server", "run"],
+      "capabilities": ["tools"],
+      "env": { "DEBUG": "auth0-mcp" }
+    }
+  },
+  "inputs": [
+
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "REditorSupport.r",
+        "RDebugger.r-debugger",
+        "Posit.air-vscode",
+        "Posit.shiny",
+        "posit.shinyuieditor",
+        "quarto.quarto"
+    ]
+}
